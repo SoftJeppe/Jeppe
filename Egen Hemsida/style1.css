@@ -1,7 +1,7 @@
 body {
     display: grid;
     background-color: lightgrey;
-    grid-template-rows:20% 10% 60% 10%;
+    grid-template-rows:80px 50px 771px 60px;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "header header"
@@ -9,6 +9,8 @@ body {
     "main aside"
     "footer footer"
 }
+/*Gridlayout, storlek och ordning. Även backgrunds färg*/
+
 
 h1 {
     text-align: center;
@@ -16,15 +18,50 @@ h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
+/*Headline storlek, centering, underline och typsnitt */
+
+.h2 {
+    text-align: center;
+    font-size: 170%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*Headline 2 storlek, centering och typsnitt */
+
+.moheda {
+    color:black;
+    font-size: 140%;
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*Class moheda storlek, centering, färg och typsnitt */
+
+.benim {
+    color : black;
+    font-size: 140%; 
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*Class benim storlek, left, färg och typsnitt */
+
+.lista {
+    color: black;
+    font-size:120%;
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    list-style-type:circle;
+}
+/*Class lista storlek, centering, färg, cirklar och typsnitt */
 
 header{
     grid-area:header;
 }
+/*Gridlayout att header heter header*/
 
 nav {
     grid-area: nav;
     background-color:grey;
 }
+/*Gridlayout att nav heter nav och backgrundsfärg*/
 
 nav > ul   {
     display: grid;
@@ -32,31 +69,58 @@ nav > ul   {
     padding:0;
     margin: 0;
 }
+/*Nav går före ul, grid, hur många colummer ska det vara och padding och marginal på 0%*/
 
 nav li{
     list-style-type: none;
     text-align: center;
     font-size: 2em;
 }
+/*Tar bort symboler som cirklar och fyrkanter, centering och storlek*/
 
 nav a{
     text-decoration: none;
 }
+/*Tar bort symboler som cirklar och fyrkanter i listan*/
 
 main {
     grid-area: main;
 }
+/*Gridlayout gör att main heter main*/
 
 aside{
     grid-area: aside;
 }
+/*Gridlayout gör att aside heter aside*/
 
 footer{
     grid-area: footer;
     background-color: grey;
     
 }
+/*Gridlayout gör att footer heter footer*/
 
 img{
-    width: 100%;
+    width: 750px;
+    height: 350px;
 }
+/*Img storlek på alla sidor båda höjd och längd*/
+
+.footer {
+    text-align:center;
+    font-size: 130%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+/*Class footer centering, storlek, typsnitt och färg*/
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    font-size: 120%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    margin:auto;
+}
+/*Färg mellan tabellen, storlek på border, inte 2 borders utan de sätts ihop till 1, centering, storlek på texten, typsnitt, färg på texten och tabellen i mitten av main gridden med margin*/

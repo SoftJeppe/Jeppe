@@ -7,30 +7,53 @@
         <title>Egen Webbsida</title>
         <link rel="stylesheet" href="style1.css">
     </head>
-
+<!--Används för att säga till hur webbläsaren ska läsa all information och ha samma standard på språk, tecken och html. Även en extern style fil-->
 
     <body>
         <header>
-            <h1>Jesper Nyd</h1>
+            <h1>Egenhemsida - Jesper Nyd</h1>
         </header>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Start</a></li>
                 <li><a href="Sida2.html">Skola</a></li>
-                <li><a href="Sida3.html">Sida3</a></li>
+                <li><a href="Sida3.html">Intressen</a></li>
             </ul>
         </nav>
+<!--Globalmenu med hjälp av lista som länkar olika filer och även namnet som visas på hemsidan-->
+
         <main>
-            <p class=benim>Jag går på gymnasiumet Teknikum som ligger i Växjö, Sverige.</p>
-            <p class=benim>Det är en stor skola med alla möjliga linjer och utbildningar. Jag går teknik vilket är en mycket krävande utbildning som har mycket matte och andra svåra ämnen.</p>
+            <p class=benim>Jag går på gymnasiumet Teknikum som ligger i Småland, Växjö, Sverige.</p>
+            <p class=benim>Det är en stor skola med alla möjliga linjer och utbildningar. Jag går TE20B i teknik linjen vilket är en mycket krävande utbildning som har mycket matte och andra svåra ämnen.</p>
+            <p class=benim>Skolan har linjer som
+<!--Text med hjälp av classer-->
+            
+            <ul>
+                <li class=lista>El och energi programmet</li>
+                <li class=lista>Barn och fritid</li>
+                <li class=lista>Teknik programmet</li>
+                <li class=lista>VVS programmet</li>
+            </ul>
+            <p class=benim>Teknik programmet har 4 inriktingar 
+            <ul>
+                <li class=lista>Design</li>
+                <li class=lista>Teknikvetenskap</li>
+                <li class=lista>Datorkommunikation</li>
+                <li class=lista>Produktionsteknik</li>
+            </ul>
+<!--Osorterad lista med ul och li med classen lista för centerning och storleks ändring-->
+
         </main>
 
         <aside>
-            <img src="https://www.mattecentrum.se/media/1396/vaxjo_teknikum.jpg?width=619" alt="teknikum">
+            <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"><img src="https://www.mattecentrum.se/media/1396/vaxjo_teknikum.jpg?width=619" alt="teknikum"></a>
         </aside>
+<!--Bild på teknikum och länk till info om teknikum med hjälp av img src och a href-->        
 
         <footer>
-            <p>Footer</p>
+            <p class=footer>Skapad 2022-10/10 till 2022-10/24 av Jesper Nyd</p>
         </footer>
+<!--Footer där det står vem som har gjort hemsidan och när hemsidan är skapad-->
+
     </body>
 </html>
