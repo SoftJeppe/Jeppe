@@ -1,11 +1,13 @@
 body {
     display: grid;
-    background-color: rgb(25, 25, 29);
-    grid-template-rows: 60px 1100px 80px;
-    grid-template-columns: 2fr 1fr;
+    background-color: rgb(18, 19, 25);
+    grid-template-rows: 60px 1200px 80px;
+    grid-template-columns: auto;
+    margin: 0px;
+    padding: 0px;
     grid-template-areas:
     "nav nav"
-    "main aside"
+    "aside main"
     "footer footer";
 }
 
@@ -18,14 +20,13 @@ h1 {
 
 nav{
     grid-area: nav;
-    background-color: rgba(19, 17, 18, 0.938);
+    background-color: rgba(15, 14, 14, 0.938);
 }
 
 nav > ul   {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding:5px;
-    margin: 5px;
+    margin: 20px;
 }
 
 nav li{
@@ -45,13 +46,14 @@ aside{
     grid-area: aside;
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 30px;¨
+    background-color: rgba(15, 14, 14, 0.938);
 }
 
 footer{
     grid-area: footer;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(15, 14, 14, 0.938);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
@@ -60,53 +62,66 @@ footer{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    grid-area: nav;
+    text-decoration: none;
+    margin:0px;
 }
 
 .games{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    text-decoration: none;
 }
 
-.affilates{
+.affiliates{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    text-decoration: none;
 }
 
 .withdraw{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    text-decoration: none;
 }
 
 .rewards{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    text-decoration: none;
 }
 
 .deposit{
-    background-color: rgb(53, 180, 53);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    background-color: rgb(76, 197, 76);
+    font-family:;
+    font-size: 18px;
     text-align: center;
-    color: rgb(199, 199, 199);
+    color: rgb(243, 243, 243);
+    padding: 15px;
+    border-radius: 14px;
+    border-top: 10px;
+    text-decoration: none;
 }
 
 .profile{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(199, 199, 199);
+    color: rgb(136, 135, 135);
+    text-decoration: none;
 }
 
 img{
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
 }
